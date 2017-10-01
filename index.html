@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>12fall</title>
     <style>
-    div {
+    .row {
         background: black;
         border: 1px solid;
         color: black;
@@ -13,23 +13,23 @@
         height: 50px;
     }
 
-    span {
+    .cell {
         display: inline-block;
         width: 50px;
         height: 50px;
     }
 
-    #blue {
+    #blueface {
         position: absolute;
         left: 161px;
     }
 
-    #red {
+    #redface {
         position: absolute;
         left: 323px;
     }
 
-    #green {
+    #greenface {
         position: absolute;
         left: -162px;
     }
@@ -41,110 +41,110 @@
     </style>
 </head>
 
-<body translate="no">
+<body>
     <p id="solution">The result is here</p>
     <div id="cube">
-        <!-- yellow face -->
-        <div id="row1">
-            <span class="c36"></span>
-            <span class="c37"></span>
-            <span class="c38"></span>
-        </div>
-        <div id="row2">
-            <span class="c39"></span>
-            <span class="c40"></span>
-            <span class="c41"></span>
-        </div>
-        <div id="row3">
-            <span class="c42"></span>
-            <span class="c43"></span>
-            <span class="c44"></span>
-        </div>
-        <div id="red">
-            <!-- red face -->
-            <div id="row1">
-                <span class="c27"></span>
-                <span class="c28"></span>
-                <span class="c29"></span>
+        <div class="yellowface">
+            <div class="row">
+                <span class="cell c36"></span>
+                <span class="cell c37"></span>
+                <span class="cell c38"></span>
             </div>
-            <div id="row2">
-                <span class="c30"></span>
-                <span class="c31"></span>
-                <span class="c32"></span>
+            <div class="row">
+                <span class="cell c39"></span>
+                <span class="cell c40"></span>
+                <span class="cell c41"></span>
             </div>
-            <div id="row3">
-                <span class="c33"></span>
-                <span class="c34"></span>
-                <span class="c35"></span>
+            <div class="row">
+                <span class="cell c42"></span>
+                <span class="cell c43"></span>
+                <span class="cell c44"></span>
             </div>
         </div>
-        <div id="blue">
-            <!-- blue face -->
-            <div id="row1">
-                <span class="c18"></span>
-                <span class="c19"></span>
-                <span class="c20"></span>
+        <div id="redface">
+            <div class="row">
+                <span class="cell c27"></span>
+                <span class="cell c28"></span>
+                <span class="cell c29"></span>
             </div>
-            <div id="row2">
-                <span class="c21"></span>
-                <span class="c22"></span>
-                <span class="c23"></span>
+            <div class="row">
+                <span class="cell c30"></span>
+                <span class="cell c31"></span>
+                <span class="cell c32"></span>
             </div>
-            <div id="row3">
-                <span class="c24"></span>
-                <span class="c25"></span>
-                <span class="c26"></span>
-            </div>
-        </div>
-        <div id="green">
-            <!-- green face -->
-            <div id="row1">
-                <span class="c45"></span>
-                <span class="c46"></span>
-                <span class="c47"></span>
-            </div>
-            <div id="row2">
-                <span class="c48"></span>
-                <span class="c49"></span>
-                <span class="c50"></span>
-            </div>
-            <div id="row3">
-                <span class="c51"></span>
-                <span class="c52"></span>
-                <span class="c53"></span>
+            <div class="row">
+                <span class="cell c33"></span>
+                <span class="cell c34"></span>
+                <span class="cell c35"></span>
             </div>
         </div>
-        <!-- orange face -->
-        <div id="row1">
-            <span class="c0"></span>
-            <span class="c1"></span>
-            <span class="c2"></span>
+        <div id="blueface">
+            <div class="row">
+                <span class="cell c18"></span>
+                <span class="cell c19"></span>
+                <span class="cell c20"></span>
+            </div>
+            <div class="row">
+                <span class="cell c21"></span>
+                <span class="cell c22"></span>
+                <span class="cell c23"></span>
+            </div>
+            <div class="row">
+                <span class="cell c24"></span>
+                <span class="cell c25"></span>
+                <span class="cell c26"></span>
+            </div>
         </div>
-        <div id="row2">
-            <span class="c3"></span>
-            <span class="c4"></span>
-            <span class="c5"></span>
+        <div id="greenface">
+            <div class="row">
+                <span class="cell c45"></span>
+                <span class="cell c46"></span>
+                <span class="cell c47"></span>
+            </div>
+            <div class="row">
+                <span class="cell c48"></span>
+                <span class="cell c49"></span>
+                <span class="cell c50"></span>
+            </div>
+            <div class="row">
+                <span class="cell c51"></span>
+                <span class="cell c52"></span>
+                <span class="cell c53"></span>
+            </div>
         </div>
-        <div id="row3">
-            <span class="c6"></span>
-            <span class="c7"></span>
-            <span class="c8"></span>
+        <div id="orangeface">
+            <div class="row">
+                <span class="cell c0"></span>
+                <span class="cell c1"></span>
+                <span class="cell c2"></span>
+            </div>
+            <div class="row">
+                <span class="cell c3"></span>
+                <span class="cell c4"></span>
+                <span class="cell c5"></span>
+            </div>
+            <div class="row">
+                <span class="cell c6"></span>
+                <span class="cell c7"></span>
+                <span class="cell c8"></span>
+            </div>
         </div>
-        <!-- white face -->
-        <div id="row1">
-            <span class="c9"></span>
-            <span class="c10"></span>
-            <span class="c11"></span>
-        </div>
-        <div id="row2">
-            <span class="c12"></span>
-            <span class="c13"></span>
-            <span class="c14"></span>
-        </div>
-        <div id="row3">
-            <span class="c15"></span>
-            <span class="c16"></span>
-            <span class="c17"></span>
+        <div id="whiteface">
+            <div class="row">
+                <span class="cell c9"></span>
+                <span class="cell c10"></span>
+                <span class="cell c11"></span>
+            </div>
+            <div class="row">
+                <span class="cell c12"></span>
+                <span class="cell c13"></span>
+                <span class="cell c14"></span>
+            </div>
+            <div class="row">
+                <span class="cell c15"></span>
+                <span class="cell c16"></span>
+                <span class="cell c17"></span>
+            </div>
         </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -153,26 +153,16 @@
     <script>
     console.clear();
     var cube = new Cube();
-    // console.log('cube',cube);
 
-    // // Apply an algorithm or randomize the cube state
-    //cube.move("U F R2 B' D2 L'");
-    //  console.log('move',cube);
-   // cube.randomize();
+    cube.move("L");
+    // cube.randomize();
 
-    // This takes 4-5 seconds on a modern computer
-Cube.initSolver();
 
-// These typically take from 0.01s to 0.4s, rarely up to 2s
-var solvestring = cube.solve();        // => "D2 B' R' B L' B ..."
-$("#solution").text(solvestring);
 
     var myColors = cube.asString();
     myColorsArray = myColors.split("");
-    //console.log("myColors", myColors, myColorsArray);
     var myColor = "pink";
-    //for (i = 0; i < myColorsArray.length; i++) {
-        for (i = 0; i < 54; i++) {
+    for (i = 0; i < myColorsArray.length; i++) {
         // console.log(myColorsArray[i]);
         if (myColorsArray[i] == "U") {
             myColor = "white";
@@ -193,8 +183,14 @@ $("#solution").text(solvestring);
             myColor = "red";
         }
         $(".c" + i).css("background-color", myColor);
-        // Cube.initSolver();
     }
+
+        // This takes 4-5 seconds on a modern computer
+    Cube.initSolver();
+
+    // These typically take from 0.01s to 0.4s, rarely up to 2s
+    var solvestring = cube.solve();        // => "D2 B' R' B L' B ..."
+    $("#solution").text(solvestring);
     </script>
 </body>
 
